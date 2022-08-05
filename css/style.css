@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+@keyframes cursor {
+    0% {
+        content: " ";
+    }
+	50% {
+        content: "|";
+	}
+    100% {
+        content: " ";
+    }
+}
+
+@keyframes menu {
+	0% {
+		max-height: 0;	
+	}
+	100% {
+		max-height: 100%;
+	}
+}
+
+.dark, .dark a {
+	background-color: #151515 !important;
+	color: #fcfcfc !important;
+}
+
+.light, .light a {
+	background-color: #fcfcfc !important;
+	color: #151515 !important;
+}
+
+body {
+	margin: auto;
+	padding: 70px 140px;
+	max-width: 1700px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+	line-height: 100%;
+}
+
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #808080;
+}
+
+header {
+	min-height: 350px;
+}
+
+.site-name a {
+	font-weight: 300;
+}
+
+.navbar {
+	display: block;
+	text-align: right;
+}
+
+.navbar li {
+	margin-left: 75px;
+	font-size: 22px;
+	font-weight: 300;
+	transition: all .25s ease-in-out;
+}
+
+.navel {
+	display: inline-block;
+}
+
+#switcher-menu {
+	display: none;
+}
+
+header, .cover {
+	display: flex;
+	justify-content: space-between;
+}
+
+.article p {
+	font-size: 75px;
+	line-height: 90%;
+}
+
+#print {
+	font-weight: 700;
+}
+
+#print:after {
+	font-weight: 400;
+	content: "|";
+}
+
+#print.anim:after {
+	animation: cursor 1.5s step-end infinite;
+}
+
+.aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.aside p {
+	text-align: right;
+	font-size: 26px;
+}
+
+@media(max-width: 991px) {
+	body {
+		padding: 25px;
+	}
+
+	header {
+		min-height: 250px;
+	}
+
+	.navbar li {
+		margin-left: 0;
+	}
+
+	.navel {
+		display: block;
+		opacity: 0;
+		max-height: 0;
+	}
+
+	.visible {
+		opacity: 1 !important;
+		max-height: 100% !important;
+	}
+
+	#switcher-menu {
+		display: inline-block;
+	}
+	
+	.article {
+		margin-bottom: 50px;
+	}
+
+	.article p {
+		text-align: center;
+		font-size: 40px;
+	}
+
+	.aside p {
+		text-align: center;
+		font-size: 18px;
+	}
+}
+
+@media (max-height: 768px) {
+	header {
+		min-height: 250px;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body, a {
+		background-color: #151515;
+		color: #fcfcfc;
+	}
+}
+  
+@media (prefers-color-scheme: light) {
+	body, a {
+		background-color: #fcfcfc;
+		color: #151515;
+	}
+}
