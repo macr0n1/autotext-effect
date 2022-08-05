@@ -33,12 +33,26 @@
 }
 
 body {
-	margin: auto;
+	height: 100vh;
 	padding: 70px 140px;
-	max-width: 1700px;
+	margin: auto;
 	font-family: 'Poppins', sans-serif;
 	font-size: 35px;
 	line-height: 100%;
+	position: relative;
+}
+
+section {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+header {
+	margin: auto;
+	max-width: 1500px;
 }
 
 a, a:hover, a:active, a:focus {
@@ -47,10 +61,6 @@ a, a:hover, a:active, a:focus {
 
 a:hover {
 	color: #808080;
-}
-
-header {
-	min-height: 350px;
 }
 
 .site-name a {
@@ -114,10 +124,6 @@ header, .cover {
 @media(max-width: 991px) {
 	body {
 		padding: 25px;
-	}
-
-	header {
-		min-height: 250px;
 	}
 
 	.navbar li {
