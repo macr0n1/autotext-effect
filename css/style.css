@@ -22,6 +22,15 @@
 	}
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+    background-color: rgba(128,128,128,0.5);
+}
+
 .dark {
 	background-color: #151515 !important;
 	color: #fcfcfc !important;
