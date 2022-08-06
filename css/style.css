@@ -79,6 +79,8 @@ a:hover {
 }
 
 .navbar {
+	margin: 0;
+	padding: 0;
 	display: block;
 	text-align: right;
 	z-index: 1;
@@ -101,8 +103,9 @@ a:hover {
 
 header, .cover {
 	display: flex;
+	align-items: flex-start;
 	justify-content: space-between;
-	}
+}
 
 .article p {
 	font-size: 75px;
