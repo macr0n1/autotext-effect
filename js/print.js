@@ -1,6 +1,6 @@
 var i = 0;
 var text = 'your website.';
-var speed = [75, 100, 125, 150, 175];
+var speed = [50, 150, 250, 350, 450];
 
 setTimeout(print, 500);
 
