@@ -70,7 +70,7 @@ a, a:hover, a:active, a:focus {
 }
 
 a:hover {
-	color: #808080;
+	color: #808080 !important;
 }
 
 .site-name {
@@ -150,10 +150,18 @@ header, .cover {
 		opacity: 0;
 		max-height: 0;
 	}
+	
+	.navel a {
+		cursor: default;
+	}
 
 	.visible {
 		opacity: 1 !important;
 		max-height: 100% !important;
+	}
+
+	.visible a {
+		cursor: pointer !important;
 	}
 
 	#switcher-menu {
