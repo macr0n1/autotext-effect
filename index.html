@@ -1,5 +1,4 @@
-<!-- Design from:
-https://www.figma.com/file/d4XUje0DJ6HIbQfyBBm0Mn/Autotext-Effect-(Community) -->
+<!-- Design: https://www.figma.com/file/d4XUje0DJ6HIbQfyBBm0Mn/Autotext-Effect-(Community) -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,27 +11,27 @@ https://www.figma.com/file/d4XUje0DJ6HIbQfyBBm0Mn/Autotext-Effect-(Community) --
   <title>Autotext Effect</title>
 </head>
 <body>
-  <header>
-    <div class="site-name"><a href="">Lorem</a></div>
-    <ul class="navbar">
-      <li style="transform: rotate(90deg);" id="switcher-menu"><a href="#" onclick="switchMenu()">|||</a></li>
-      <li class="navel"><a href="#" onclick="switchTheme()" id="switcher-theme">Theme</a></li>
-      <li class="navel"><a href="#ipsum">Ipsum</a></li>
-      <li class="navel"><a href="#dolor">Dolor</a></li>
-      <li class="navel"><a href="#sit">Sit</a></li>
-    </ul>
-  </header>
-  <section>
-    <div class="container">
-      <div class="cover row">
-        <main class="article col-md-12 col-lg-7">
-          <p>I'm</p>
-          <p id="print"></p>
-        </main>
-        <div class="aside col-md-12 col-lg-5"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt adipiscing turpis ante enim vel.</p></div>
-      </div>
+  <header class="container">
+    <div class="row">
+      <lh class="site-name col-md-6 col-lg-2"><a href="">Lorem</a></lh>
+      <ul class="navbar col-md-6 col-lg-10">
+        <li style="transform: rotate(90deg);" id="switcher-menu"><a href="#" onclick="switchMenu()">|||</a></li>
+        <li class="navel"><a href="#" onclick="switchTheme()" id="switcher-theme">Theme</a></li>
+        <li class="navel"><a href="#ipsum">Ipsum</a></li>
+        <li class="navel"><a href="#dolor">Dolor</a></li>
+        <li class="navel"><a href="#sit">Sit</a></li>
+      </ul>
     </div>
-  </section>
+  </header>
+  <main class="cover container">
+    <div class="row">
+      <div class="article col-md-12 col-lg-7">
+        <p>I'm</p>
+        <p id="print"></p>
+      </div>
+      <div class="aside col-md-12 col-lg-5"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt adipiscing turpis ante enim vel.</p></div>
+    </div>
+  </main>
   <script src="js/menu.js"></script>
   <script src="js/print.js"></script>
   <script src="js/theme.js"></script>
